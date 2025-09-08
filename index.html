@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lễ Tốt Nghiệp - Hà Đức Chung</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Welcome Overlay -->
+    <div id="welcomeOverlay" class="welcome-overlay">
+        <div class="welcome-content">
+            <div class="welcome-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h2>Chào mừng đến với</h2>
+            <h1>Thư Mời Tham Dự Lễ Tốt Nghiệp</h1>
+            <h3>Hà Đức Chung</h3>
+            <button id="enterBtn" class="enter-btn">
+                <i class="fas fa-music"></i>
+                Đọc thư mời
+            </button>
+            <p class="music-note">🎵 Nhạc nền sẽ được phát</p>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="assets/music/Phép Màu.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Music Control -->
+    <div class="music-control">
+        <button id="musicToggle" class="music-btn">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="graduation-cap">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h1 class="hero-title">Lễ Tốt Nghiệp</h1>
+            <h2 class="graduate-name">Hà Đức Chung</h2>
+            <p class="hero-subtitle">Trường Đại học Bách Khoa Hà Nội</p>
+            <div class="hero-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>27 Tháng 9, 2025</span>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Personal Photo Section -->
+    <section class="photo-section" id="photo">
+        <div class="container">
+            <h3 class="section-title">Khoảnh Khắc Đáng Nhớ</h3>
+            
+            <!-- Main Featured Photo -->
+            <div class="main-photo">
+                <div class="main-photo-frame">
+                    <img src="assets/photos/ghibli_x.png" alt="Ảnh đặc biệt của Hà Đức Chung" class="main-image">
+                </div>
+                <div class="main-photo-text">
+                    <h4>Hành Trình Tốt Nghiệp</h4>
+                    <p>Sau những năm tháng nỗ lực và cố gắng không ngừng, cuối cùng thì khoảnh khắc mong chờ cũng đã đến.</p>
+                    <p>Ngày mà ĐC chính thức nhận tấm bằng cử nhân, khép lại một chặng đường thanh xuân dưới mái trường BKHN và mở ra hành trình mới phía trước.</p>
+                    <p>Với tất cả niềm hạnh phúc và sự trân trọng, mình xin gửi lời mời chân thành tới những người thân yêu, những người bạn quý để cùng chung vui và chứng kiến cột mốc đáng nhớ này.</p>
+                </div>
+            </div>
+
+            <!-- Photo Gallery Grid -->
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="assets/photos/Chung1.JPEG" alt="Ảnh tốt nghiệp 1" class="gallery-image">
+                    <div class="photo-overlay">
+                        <p>Khoảnh khắc 1</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/photos/ghibli_1.png" alt="Ảnh Ghibli 1" class="gallery-image">
+                    <div class="photo-overlay">
+                        <p>Phong cách 1</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/photos/Chung2.JPEG" alt="Ảnh tốt nghiệp 2" class="gallery-image">
+                    <div class="photo-overlay">
+                        <p>Khoảnh khắc 2</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/photos/ghibli_2.png" alt="Ảnh Ghibli 2" class="gallery-image">
+                    <div class="photo-overlay">
+                        <p>Phong cách 2</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/photos/Chung3.JPEG" alt="Ảnh tốt nghiệp 3" class="gallery-image">
+                    <div class="photo-overlay">
+                        <p>Khoảnh khắc 3</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/photos/ghibli_3.png" alt="Ảnh Ghibli 3" class="gallery-image">
+                    <div class="photo-overlay">
+                        <p>Phong cách 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Introduction Section
+    <section class="intro-section" id="introduction">
+        <div class="container">
+            <h3 class="section-title">Lời Giới Thiệu</h3>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p class="intro-placeholder">
+                        [Đây là nơi bạn sẽ viết lời giới thiệu về bản thân. Hãy chia sẻ về hành trình học tập, những thành tựu đã đạt được, và cảm xúc của bạn khi sắp tốt nghiệp. Bạn có thể kể về những kỷ niệm đẹp trong quá trình học tập tại trường Đại học Bách Khoa Hà Nội.]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Event Details Section -->
+    <section class="event-details" id="details">
+        <div class="container">
+            <h3 class="section-title">Thông Tin Lễ Tốt Nghiệp</h3>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4>Ngày Diễn Ra</h4>
+                        <p>Thứ Bảy, 27 Tháng 9, 2025</p>
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4>Thời Gian</h4>
+                        <p>15:00 PM - 16:30 PM</p>
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="detail-content">
+                        <h4>Địa Điểm</h4>
+                        <p>Đại học Bách Khoa Hà Nội</p>
+                        <p class="address">Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="location">
+        <div class="container">
+            <h3 class="section-title">Bản Đồ Địa Điểm</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.655245407581!2d105.83973167590264!3d21.006452388543156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac77be0eafaf%3A0xd66f269f842d3935!2zSOG7mWkgdHLGsOG7nW5nIEMy!5e0!3m2!1svi!2s!4v1757348745261!5m2!1svi!2s" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="map-info">
+                <p><strong>Cách di chuyển:</strong></p>
+                <div class="directions-content">
+                    <div class="directions-image">
+                        <img src="assets/photos/HD_DICHUYEN.png" alt="Hướng dẫn di chuyển trong khuẩn viên ĐHBKHN" class="directions-img">
+                    </div>
+                    <div class="directions-flow">
+                        <!-- Route 1: Cổng Trần Đại Nghĩa -->
+                        <div class="route-container">
+                            <h4><i class="fas fa-door-open"></i> Tuyến 1: Cổng Trần Đại Nghĩa</h4>
+                            <div class="flow-steps">
+                                <div class="step">
+                                    <div class="step-icon">🏍️</div>
+                                    <div class="step-text">Vào cổng<br>Trần Đại Nghĩa</div>
+                                </div>
+                                <div class="arrow">→</div>
+                                <div class="step">
+                                    <div class="step-icon parking">🅿️</div>
+                                    <div class="step-text">Gửi xe tại<br><strong>C7</strong> (màu vàng)</div>
+                                </div>
+                                <div class="arrow">→</div>
+                                <div class="step">
+                                    <div class="step-icon event">🎓</div>
+                                    <div class="step-text">Đến <strong>C2</strong><br>(màu đỏ)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Route 2: Cổng Giải Phóng -->
+                        <div class="route-container">
+                            <h4><i class="fas fa-door-open"></i> Tuyến 2: Cổng Parabol Giải Phóng</h4>
+                            <div class="flow-steps">
+                                <div class="step">
+                                    <div class="step-icon">🚗</div>
+                                    <div class="step-text">Vào cổng<br>Parabol</div>
+                                </div>
+                                <div class="arrow">→</div>
+                                <div class="step">
+                                    <div class="step-icon parking">🅿️</div>
+                                    <div class="step-text">Gửi xe tại<br><strong>D8</strong> hoặc <strong>C7</strong></div>
+                                </div>
+                                <div class="arrow">→</div>
+                                <div class="step">
+                                    <div class="step-icon event">🎓</div>
+                                    <div class="step-text">Đến <strong>C2</strong><br>(màu đỏ)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warning Section -->
+    <section class="warning-section" id="warning">
+        <div class="container">
+            <h3 class="section-title">⚠️ Cảnh Báo Nghiêm Trọng ⚠️</h3>
+            <div class="warning-content">
+                <div class="warning-images">
+                    <div class="warning-image-item">
+                        <img src="assets/photos/KODEN1.JPEG" alt="Koden 1" class="koden-image">
+                        <p class="warning-caption">Trang trọng lịch sự không làm lố</p>
+                    </div>
+                    <div class="warning-image-item">
+                        <img src="assets/photos/KODEN2.JPEG" alt="Koden 2" class="koden-image">
+                        <p class="warning-caption">Nếu không thì....</p>
+                    </div>
+                </div>
+                <div class="warning-message">
+                    <div class="final-message">
+                        <p>Điều cuối cùng mình muốn chia sẻ tại thư mời này:</p>
+                        <img src="assets/photos/dungvaobackhoa.JPEG" alt="Lời nhắn cuối cùng" class="final-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h3 class="section-title">Liên Hệ</h3>
+            <div class="contact-content">
+                <p>Để biết thêm thông tin chi tiết hoặc xác nhận tham dự, vui lòng liên hệ:</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Điện thoại: 0385889433</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: chungcgcg@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hà Đức Chung. Cảm ơn bạn đã chia sẻ khoảnh khắc đặc biệt này cùng tôi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
